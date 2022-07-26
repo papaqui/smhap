@@ -1,0 +1,331 @@
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 95%;
+  }
+  .top-bar {
+    padding-left: 0;
+  }
+  .section-home-sociedad-medica-item img{
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    position: relative;
+  }
+  .section-home-sociedad-medica{
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: 3rem;
+  }
+  
+}
+
+@media screen and (max-width: 1010px) {
+  .single-directorio-member{
+    grid-template-columns: 1fr;
+  }
+  .single-directorio-content{
+    padding-left: 0;
+  }
+  .single-directorio-especialidades{
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .show-more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .single-directorio-lista-especialidades{
+    display: none;
+  }
+  .single-directorio-especialidades h4{
+    font-size: 1.1rem;
+    cursor: pointer;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+  .single-directorio-especialidades h4:hover{
+    opacity: 0.9;
+  }
+
+  /* Menu  */
+  .header-logo img {
+    width: 132px;
+    height: 80px;
+  }
+
+  .top-bar,
+  .header-container {
+    padding: 0;
+  }
+  .top-bar-content{
+    width: 100%;
+  }
+  .section-hero,
+  .page-banner{
+    margin-top: 0;
+  }
+
+  .header-logo{
+    z-index: 1;
+  }
+
+  .the-search {
+    display: none;
+  }
+  
+  .the-icon {
+    display: block;
+  }
+  .main-navigation {
+    left: -260px;
+    background: var(--main-color);
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    min-height: 100vh;
+    width: 250px;
+    -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    -webkit-transition: left 0.3s ease-in-out;
+    -o-transition: left 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out;
+  }
+  .main-navigation ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main-navigation ul li {
+    display: block;
+    margin: 0 0 2rem 0;
+  }
+  .show {
+    display: block;
+  }
+  .show-left {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .medium-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .page-banner,
+  .section-hero {
+    background-attachment: scroll;
+  }
+/* 
+  .section-home-directorio-content {
+    width: 440px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 2rem auto;
+  } */
+  .section-directorio-content,
+  .section-home-directorio-content{
+    width: 640px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: 0 auto 2rem;
+  }
+  .section-home-directorio-content{
+    margin: 2rem auto;
+  }
+
+  .sociedad-objetivos-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .directorio-profile{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+  .directorio-profile-content{
+    margin-left: 0;
+    height: auto;
+  }
+  .directorio-profile-photo{
+    margin-bottom: 1rem;
+  }
+  .directorio-profile-photo img{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .page-banner-box{
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .small-container {
+    width: 95%;
+  }
+
+  .section-eventos-content{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .eventos-item{
+    margin-bottom: 2rem;
+  }
+
+  .section-articulos-content{
+    grid-template-columns: 1fr;
+  }
+
+  .footer-main-menu {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+  .footer-menu nav ul.menu,
+  .footer-main-menu nav ul.menu{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-menu nav ul.menu li,
+  .footer-main-menu nav ul.menu li {
+    margin-right: 0;
+    padding-right: 0;
+    margin-bottom: 1rem;
+    border-right: none;
+  }
+  .footer-menu nav ul.menu li:last-child,
+  .footer-main-menu nav ul.menu li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-directorio-content,
+  .section-home-directorio-content{
+    width: 430px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .page-contacto{
+    grid-template-columns: 1fr;
+  }
+  .page-contacto-item{
+    margin: 0;
+  }
+  .page-contacto-item:first-child{
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .page-contacto-item:last-child{
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-hero-content {
+    width: 95%
+  }
+  .section-home-sociedad-medica{
+    padding-bottom: 3rem;
+  }
+  .section-home-sociedad-medica-item:last-child{
+    display: none;
+  }
+
+  .section-eventos-content{
+    grid-template-columns: 1fr;
+    width: 400px;
+    margin: 2rem auto;
+  }
+  .eventos-item{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .sociedad-objetivos-content {
+    grid-template-columns: 1fr;
+  }
+  .sociedad-objetivos-item{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .section-hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  /* .section-home-directorio-content {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    width: 216px;
+  } */
+
+  .section-directorio-content,
+  .section-home-directorio-content{
+    width: 330px;
+  }
+
+  .home-directorio-item{
+    width: auto;
+  }
+  .home-directorio-image{
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .section-eventos-content{
+    width: 100%;
+  }
+  .directorio-profile-photo{
+    height: auto;
+  }
+  .directorio-profile-photo img{
+    max-width: 100%;
+    height: auto;
+  }
+  .single-metabox{
+    display: block;
+  }
+  .single-content .single-metabox p{
+    padding-top: 0.5em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .section-directorio-content{
+    width: 290px;
+  }
+}
